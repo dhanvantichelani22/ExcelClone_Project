@@ -25,3 +25,5 @@
 3) Bold, Italic and Underline.
 
 4) Custom Background Color and Text Color.
+
+# New Features and improvements will be added time to time in future.
