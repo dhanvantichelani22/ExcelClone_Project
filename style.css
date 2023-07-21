@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    background-color: lightgray;
+}
+.page{
+    height: 3rem;
+    width: 163vw;
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    padding-left: 0.2rem;
+    
+}
+.color-prop {
+    position: relative;
+}
+
+.color-prop > input {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+.page button{
+  border: none;
+  cursor: pointer;
+}
+#font-size{
+    border: 1.5px solid rgb(218, 213, 213);
+    height: 4vh;
+    width:3.5vw;
+    background-color: white;
+    border-radius: 2px;
+}
+#font-family{
+    border: 1.5px solid rgb(218, 213, 213);
+    height: 4vh;
+    border-radius: 2px;
+    text-align: center;
+    width:8vw;
+    background-color: white;
+}
+button:active{
+ background-color: rgb(146, 139, 139);
+}
+
+.page > * {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+.page-actions-cont{
+    height: 3rem;
+    width: 170vw;
+    background-color: #218c74;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 1rem;
+}
+.page-action{
+    width: 3.5rem;
+    height: 2rem;
+    text-align: center;
+    color: #f1f2f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selected-page-action{
+    background-color: #f1f2f6;
+    color: #218c74;
+}
+table{
+    border-collapse: collapse;
+    border:2px solid #747d8c;
+    
+    width: auto;
+    overflow-x: auto; /*bottom Scroll from left to right */
+}
+
+
+#currentCell{
+    border:none;
+    /* border-bottom:none; */
+    vertical-align: middle;
+    font-size: medium;
+    height: 3vh;
+    width: 5rem;
+    background-color: white;
+    margin-left: 1rem;
+    text-align: center;
+}
+/* .nameBox{
+    border:1px solid grey;
+    border-bottom:none;
+    vertical-align: middle;
+    height: 5vh;
+    width: 5rem;
+    text-align: center;
+} */
+
+th,td {
+    /* margin: 0px; */
+    border: 1px solid #747d8c;
+    min-width: 80px;
+    max-width: 80px;
+}
+
+ td:focus {  /* while edit in text writing blue outline to remove */
+    outline: none;
+}
+td:active{
+   background-color: #3dac94; 
+}
+.nameBox{
+    margin: 20px 50px;
+    margin-bottom: 50px;
+}

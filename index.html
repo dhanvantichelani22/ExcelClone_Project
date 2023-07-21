@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- https://fontawesome.com/v4/icons/ -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Microsoft_Excel_2013-2019_logo.svg/2170px-Microsoft_Excel_2013-2019_logo.svg.png">
+    <!-- font awesome for using refresh -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Material for using copy,paste,cut -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+</head>
+ <body><!--<i class='fa fa-cloud-upload'></i> <i class='fa fa-cloud-download'></i>-->
+    <div class="page-actions-cont">
+        <div class="page-action">File</div>
+        <div class=" page-action selected-page-action">Home</div>
+        <div class="page-action">Insert</div>
+        <div class="page-action">Layout</div>
+        <div class="page-action">Help</div>
+    </div>
+    <div>
+        <div class="page">
+
+        <button id="copy-btn"><i class="material-icons">content_copy</i></button>
+        <button id="cut-btn"><i class="material-icons">content_cut</i></button>
+        <button id="paste-btn"><i class="material-icons">content_paste</i></button>
+        
+        <select id="font-family">
+            <option value="sans-serif">Sans-serif</option>
+            <option value="monospace">Monospace</option>
+            <option value="cursive">Cursive</option>
+            <option value="fantasy">Fantasy</option>
+          </select>
+        <select id="font-size">
+            <option value="14px">14</option>
+            <option value="16px">16</option>
+            <option value="18px">18</option>
+            <option value="20px">20</option>
+            <option value="22px">22</option>
+            <option value="26px">26</option>
+          </select>
+        <button id="bold-btn"><i class="material-icons">format_bold</i></button>
+        <button id="italics-btn"><i class="material-icons">format_italic</i></button>
+        <button id="underline-btn"><i class="material-icons">format_underline</i></button>
+        <button id="left-align"><i class="material-icons al">format_align_left</i></button>
+        <button id="center-align"><i class="material-icons al">format_align_center</i></button>
+        <button id="right-align"><i class="material-icons al">format_align_right</i></button>
+        <div class="color-prop">
+            <span class="material-icons">
+                format_color_text
+            </span>
+            <input type="color" id="color_text">
+        </div>
+        <div class="color-prop">
+            <span class="material-icons">
+                format_color_fill
+            </span>
+            <input type="color" id="color_fill">
+        </div>
+        
+        <button onclick="downloadJson()"><i class="material-icons  download">cloud_download</i></button>
+        <button onclick="uploadJson()" id=""><i class="material-icons open">cloud_upload</i></button>
+    <input type="file" id="jsonFile" accept=".json" />
+ 
+    </div>
+    <table id="my-table">
+        <thead>
+            <h2 id="currentCell">A1</h2>
+            <!-- <div>
+                <tr>
+                    <th class="nameBox">1</th>
+                     <button type="reset" class="reload"><i class="fa-solid fa-rotate-right"></i></button> 
+                </tr>
+            </div>--> 
+            
+            <tr id="table-heading-row">
+                <th style="background-color:#747d8c;" ></th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+            
+            <!-- <tr>
+                <th>1</th> //It print 1 in left side
+                <td contenteditable="true"></td>
+                <th></th>
+            </tr> 
+            <tr><th>2</th></tr> //It print 2 in center --> 
+            <!-- <tr><th>3</th></tr>       
+            </tr> -->
+        </tbody>
+    </table>
+    
+    <script src="./script.js"></script>
+   
+</body>
+</html>
